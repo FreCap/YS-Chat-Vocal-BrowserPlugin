@@ -1,0 +1,24 @@
+
+
+JAVASCRIPT - C++ PLUGIN
+
+.call( call_id:"String", call_password:"String", call_version:(int), server:(int), port:(int) )
+
+.disconnect( call_id:"String" )
+
+
+
+
+EVENTS
+
+startedCall( callId:"String");
+disconnected( errorId:(int), errorType:"String");
+
+connectingError( const int, const std::string&));
+connectionStatusChanged( (int) );
+/*
+0 disconnected
+1 connected to the server
+2 logged into the server
+3 joined in the channel
+*/
